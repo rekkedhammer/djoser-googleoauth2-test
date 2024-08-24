@@ -32,9 +32,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-&psk#na5l=p3q8
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ["*"]
-
-
-# Application definition
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000", "https://web-production-ee30.up.railway.app"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
